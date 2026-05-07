@@ -7,7 +7,17 @@ import models.Alert;
 import models.Packet;
 import models.Signature;
 
+/**
+ * Entry point for the NetGuard Network Log Scanner.
+ * Orchestrates the full pipeline: parsing, detection, alerting, IP tracking, and logging.
+ */
 public class Main {
+
+    /**
+     * Main method that runs the NetGuard scanner.
+     *
+     * @param args Command line arguments (not used)
+     */
     public static void main(String[] args) {
 
         // Initialize all engines
